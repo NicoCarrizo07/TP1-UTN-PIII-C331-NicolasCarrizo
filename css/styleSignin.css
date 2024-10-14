@@ -1,0 +1,128 @@
+body {
+    background-image: url('../images/pixelcut-export.jpeg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.custom-navbar{
+    background-color: #7A1D2D;
+    height: 77px;
+}
+
+.custom-navbar .nav-link {
+    color: white; 
+}
+
+.custom-navbar .nav-link:hover {
+    color: #ddd;
+}
+
+.custom-navbar .btn-outline-success {
+    color: white; 
+    border-color: white; 
+}
+
+.custom-navbar .btn-outline-success:hover {
+    background-color: white;
+    color: #7A1D2D;
+}
+
+.logo-lanus {
+    width: 300px;
+    height: auto;
+}
+
+.navbar-brand {
+    margin-right: auto;
+}
+
+/*centrar los elementos del menu */
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/*Alinear el formulario de búsqueda a la derecha */
+.search-form {
+    margin-left: auto;
+}
+
+
+main.mainSignIn {
+    background-color: white;
+    padding: 2rem; 
+    border-radius: 10px; 
+    max-width: 600px; /*limita el ancho del contenido */
+    margin: 3rem auto; /*centra el main en la pantalla */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*sombra suave para hacer que resalte*/
+}
+
+h2{
+    text-align: center; 
+}
+
+.formSingIn{
+    display: flex;
+    flex-direction: column; /*el contenido del form se ordena en columas,una debajo de otra */
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.formSingIn label {
+    margin-top: 1rem;
+}
+
+.formSingIn input {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+
+.buttonSignIn{
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color:#7A1D2D;
+    color: white;
+    border: none;
+    cursor: pointer; /*se pone la manito en el cursor*/
+}
+
+footer.footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    position: fixed; /*se muestra desde toda la pantalla, queda fijo*/
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center; /*centra el texto */
+    align-items: center; /*alinea verticalmente */
+    position: relative; /*es necesario para que el position:absolute funcione con los iconos */
+    padding: 0 1.5rem;
+}
+
+.footer-icons {
+    position: absolute;
+    right: 1.5rem; /*ubica los íconos a la derecha del footer */
+    display: flex;
+    gap: 25px; /*espacio entre los íconos */
+}
+
+.footer-icons a {
+    font-size: 1.5rem;
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease; /*suaviza el movimiento y el cambio de color */
+}
+
+.footer-icons a:hover {
+    transform: translateY(-5px); /* efecto de movimiento hacia arriba */
+    color: #8f3c4a;
+}
+

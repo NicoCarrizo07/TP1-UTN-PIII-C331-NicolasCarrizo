@@ -1,0 +1,126 @@
+body {
+    background-image: url('../images/pixelcut-export.jpeg'); 
+    background-size: cover; 
+
+    background-repeat: no-repeat; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.custom-navbar{
+    background-color: #7A1D2D; 
+    height: 77px;
+}
+
+.custom-navbar .nav-link {
+    color: white;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #ddd; 
+}
+
+.custom-navbar .btn-outline-success {
+    color: white; 
+    border-color: white; /
+}
+
+.custom-navbar .btn-outline-success:hover {
+    background-color: white; 
+    color: #7A1D2D; 
+}
+
+.logo-lanus {
+    width: 300px;  
+    height: auto;  
+}
+
+.navbar-brand {
+    margin-right: auto;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.search-form {
+    margin-left: auto;
+}
+
+.mainSignUp{
+    background-color: white; 
+    padding: 2rem; 
+    border-radius: 10px;
+    max-width: 600px; 
+    margin: 3rem auto; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.formSingUp{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.formSingUp label {
+    margin-top: 1rem;
+}
+
+.formSingUp input {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+h2{
+    text-align: center;;
+}
+
+.buttonSignUp{
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: #7A1D2D;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+footer.footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    position: relative;
+    padding: 0 1.5rem;
+}
+
+.footer-icons {
+    position: absolute;
+    right: 1.5rem; 
+    display: flex;
+    gap: 25px;
+}
+
+.footer-icons a {
+    font-size: 1.5rem;
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease; 
+}
+
+.footer-icons a:hover {
+    transform: translateY(-5px);
+    color: #8f3c4a; 
+}

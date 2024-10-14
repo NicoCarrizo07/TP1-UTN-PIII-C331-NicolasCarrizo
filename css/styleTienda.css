@@ -1,0 +1,118 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0%;
+    background-color: #cfa3a3a0;
+    color: #333;
+}
+
+header {
+    background-color: #741b30;
+    padding: 50px;
+    text-align: center; /*mantiene el centrado del contenido */
+    display: flex;
+    justify-content: center; /*centra el logo en el header */
+    align-items: center;
+    position: relative; /*para poder usar position: absolute en el icono */
+    height: 80px;
+}
+
+header i {
+    position: absolute;
+    right: 20px; /*mover carrito*/
+    font-size: 24px; /*tamaño del icono*/
+    color: white; 
+    cursor: pointer; 
+}
+
+#carouselExampleIndicators {
+    max-width: 1300px;
+    max-height: 900px;
+    margin: 0 auto;  /*centra el carousel horizontalmente*/
+}
+
+
+/*contendor principal de los productos (div que contiene todo)*/
+.contenedor-productos{
+    display: flex; 
+    flex-wrap: wrap; /*permite que los productos se organizen en varias filas*/
+    justify-content: space-between; /*espacio uniforme entre pdroductos para completar el 100% de la pag*/
+    padding: 20px;
+}
+
+.producto{
+    background-color: rgb(219, 200, 200);
+    width: 30%; /*cada producto ocupa un 30% del ancho del contenedor (tres productos por fila)*/
+    margin-bottom: 20px;
+    padding: 15px;
+    text-align: center;
+    /*aniadir una sombra sutil a la caja (0, 0, 0,0.1)*/ 
+    box-shadow: 0px 4px 8px  #7A1D2D;
+    box-sizing: border-box; /*Incluyo padding en el ancho total*/
+    
+}
+
+.producto img{
+    max-width: 100%; /* la img ocupa el 100% del contenedor */
+    /*height: auto; /*mantiene la proporcion de la imagen*/
+    height: 500px;
+    width: 800px;
+}
+
+.producto h3{
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/*Precio del producto*/
+.producto p{
+    font-size: 1rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+/*Boton del producto*/
+.producto button{
+    background-color: #741b30;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.ubicacion{
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+
+.mapa{
+    display: flex;
+    justify-content: center; /*centra el iframe horizontalmente */
+    margin-top: 20px;
+    padding-bottom: 25px;
+}
+
+
+
+/*Media Query para pantallas medianas (tablets)*/
+@media (max-width: 768px)
+{
+    .producto{
+        width: 45%; /*2 productos por fila en pantallas medianas*/
+    }
+}
+
+/*Media Query para pantallas pequenias (celu)*/
+@media (max-width: 480px)
+{
+    .producto{
+        width: 100%; /*1 producto por fila en pantallas pequenias*/
+    }
+    header{
+        padding: 15px; /*ajusto el padding del encabezado*/
+    }
+
+    .contenedor-productos{
+        padding: 10px;
+    }
+}
